@@ -19,7 +19,7 @@
   <!-- NAVBAR SUPERIOR -->
   <header class="sticky-top">
     <!-- NAVBAR PRINCIPAL -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm position-relative" style="z-index: 1040;">
       <div class="container-fluid justify-content-between">
         <a class="navbar-brand fw-semibold" href="../index.html">✌️iStore</a>
 
@@ -49,7 +49,7 @@
             </li>
 
             <!-- PERFIL DESPLEGABLE -->
-            <li class="nav-item dropdown z-3">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <div class="rounded-circle bg-light d-flex justify-content-center align-items-center me-2"
@@ -58,8 +58,8 @@
                 </div>
                 Perfil
               </a>
-              <ul class="dropdown-menu dropdown-menu-end shadow-sm"
-                style="min-width: 240px; border-radius: var(--radius-medium);">
+              <ul class="dropdown-menu dropdown-menu-end shadow-sm position-absolute"
+                style="min-width: 240px; border-radius: var(--radius-medium); z-index: 1050;">
 
                 <!-- Avatar + nombre -->
                 <li class="px-3 py-2 text-center border-bottom">
@@ -101,7 +101,8 @@
     </nav>
 
     <!-- NAVBAR MENÚ / CATEGORÍAS -->
-    <nav class="navbar navbar-expand-lg border-top bg-light-subtle nav-categorias">
+    <nav class="navbar navbar-expand-lg border-top bg-light-subtle nav-categorias position-relative"
+      style="z-index: 1030;">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCategorias"
           aria-controls="menuCategorias" aria-expanded="false" aria-label="Abrir menú">
@@ -368,8 +369,8 @@
         <small class="text-apple-secondary">© 2025 iStore. Todos los derechos reservados.</small>
         <div class="d-flex gap-3">
           <a href="#" class="link-dark"><small>Privacidad</small></a>
-          <a href="#" class="link-dark"><small>Términos</small></a>
-          <a href="#" class="link-dark"><small>Cookies</small></a>
+          <a href="../empleado/index-empleado.html" class="link-dark"><small>Términos</small></a>
+          <a href="index-administrador.html" class="link-dark"><small>Cookies</small></a>
         </div>
       </div>
     </div>

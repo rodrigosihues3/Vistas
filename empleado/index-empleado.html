@@ -19,7 +19,8 @@
   <!-- NAVBAR SUPERIOR -->
   <header class="sticky-top">
     <!-- NAVBAR PRINCIPAL -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+    <!-- NAVBAR PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm position-relative" style="z-index: 1040;">
       <div class="container-fluid justify-content-between">
         <a class="navbar-brand fw-semibold" href="../index.html">✌️iStore</a>
 
@@ -49,7 +50,7 @@
             </li>
 
             <!-- PERFIL DESPLEGABLE -->
-            <li class="nav-item dropdown z-3">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 <div class="rounded-circle bg-light d-flex justify-content-center align-items-center me-2"
@@ -58,8 +59,8 @@
                 </div>
                 Perfil
               </a>
-              <ul class="dropdown-menu dropdown-menu-end shadow-sm"
-                style="min-width: 240px; border-radius: var(--radius-medium);">
+              <ul class="dropdown-menu dropdown-menu-end shadow-sm position-absolute"
+                style="min-width: 240px; border-radius: var(--radius-medium); z-index: 1050;">
 
                 <!-- Avatar + nombre -->
                 <li class="px-3 py-2 text-center border-bottom">
