@@ -20,66 +20,55 @@
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
       <div class="container-fluid justify-content-between">
-        <a class="navbar-brand fw-semibold" href="../../index.html">✌️iStore</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-semibold" href="../index.html">✌️iStore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse justify-content-between" id="navbarScroll">
           <div class="w-25"></div>
-
-          <!-- Barra de búsqueda -->
           <form class="d-flex w-25" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar producto o pedido" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?">
             <button class="btn btn-outline-secondary" type="submit">Buscar</button>
           </form>
-
-          <!-- Opciones derecha -->
           <ul class="navbar-nav navbar-nav-scroll">
-            <li class="nav-item me-lg-3 me-2 my-auto">
-              <span class="nav-link">📍 Ica, Perú</span>
-            </li>
+            <li class="nav-item me-lg-3 me-2 my-auto"><span class="nav-link">📍 Ica, Perú</span></li>
             <li class="nav-item me-lg-2 me-2 my-auto">
-              <a href="#" class="btn btn-outline-dark border-0">
-                🛒 Carrito <span class="badge bg-primary ms-1">0</span>
-              </a>
+              <a href="#" class="btn btn-outline-dark border-0">🛒 Carrito <span
+                  class="badge bg-primary ms-1">0</span></a>
             </li>
-
-            <!-- PERFIL -->
             <li class="nav-item dropdown z-3">
               <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+                data-bs-toggle="dropdown">
                 <div class="rounded-circle bg-light d-flex justify-content-center align-items-center me-2"
                   style="width: 32px; height: 32px; border: 1px solid var(--border-medium);">
                   <span>👤</span>
                 </div>
                 Perfil
               </a>
-              <ul class="dropdown-menu dropdown-menu-end shadow-sm"
-                style="min-width: 240px; border-radius: var(--radius-medium);">
+              <ul class="dropdown-menu dropdown-menu-end shadow-sm" style="min-width: 240px;">
                 <li class="px-3 py-2 text-center border-bottom">
                   <div class="rounded-circle bg-light d-flex justify-content-center align-items-center mx-auto mb-2"
                     style="width: 64px; height: 64px; border: 1px solid var(--border-medium);">
                     <span class="fs-3">👤</span>
                   </div>
                   <p class="mb-0 fw-semibold">María López</p>
-                  <small class="text-secondary">empleado@istore.com</small>
+                  <small class="text-secondary">admin@istore.com</small>
                 </li>
                 <li><a class="dropdown-item" href="">👤 Mi cuenta</a></li>
                 <li><a class="dropdown-item" href="">📦 Mis pedidos</a></li>
-                <li class="mt-2 mb-1 px-3 text-uppercase small fw-semibold text-secondary text-center">
-                  Funciones de empleado
-                </li>
+                <li class="mt-2 mb-1 px-3 text-uppercase small fw-semibold text-secondary text-center">Funciones de
+                  admin</li>
                 <li><a class="dropdown-item" href="catalogo.html">🛠️ Gestionar catálogos</a></li>
                 <li><a class="dropdown-item" href="inventario.html">📦 Gestionar inventario</a></li>
                 <li><a class="dropdown-item" href="pedidos.html">📑 Ver pedidos</a></li>
                 <li><a class="dropdown-item" href="devoluciones.html">🔄 Devoluciones</a></li>
+                <li><a class="dropdown-item" href="usuarios.html">👤 Gestionar usuarios y roles</a></li>
+                <li><a class="dropdown-item" href="errores.html">⚠️ Supervisar errores</a></li>
+                <li><a class="dropdown-item" href="tablasBD.html">🗄️ Ver tablas BD</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item text-danger" href="../../index.html">Cerrar sesión</a></li>
+                <li><a class="dropdown-item text-danger" href="../index.html">Cerrar sesión</a></li>
               </ul>
             </li>
           </ul>
@@ -164,8 +153,7 @@
                   <button class="btn btn-sm btn-primary" data-bs-toggle="modal"
                     data-bs-target="#modalPedido">Ver</button>
                   <button class="btn btn-sm btn-success">Completar</button>
-                  <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#modalCancelar">Solicitar
-                    cancelacion</button>
+                  <button class="btn btn-sm btn-danger">Cancelar</button>
                 </td>
               </tr>
               <tr>
@@ -241,32 +229,6 @@
         <div class="modal-footer">
           <button class="btn btn-success">Completar</button>
           <button class="btn btn-danger">Cancelar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL SOLICITAR CANCELACION -->
-  <div class="modal fade" id="modalCancelar" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content border-0 shadow">
-        <div class="modal-header">
-          <h5 class="modal-title text-danger">🚫 Solicitar cancelación</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          <p>¿Estás seguro de que deseas solicitar la cancelación de este pedido?
-            Esta acción será enviada al administrador para su revisión.</p>
-
-          <div class="mb-3">
-            <label for="motivoCancelacion" class="form-label">Motivo (opcional):</label>
-            <textarea class="form-control" id="motivoCancelacion" rows="3"
-              placeholder="Ej: Cliente reportó error en el pedido..."></textarea>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button class="btn btn-danger">Enviar solicitud</button>
         </div>
       </div>
     </div>

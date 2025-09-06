@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empleado | Apple Watch</title>
+  <title>Empleado | iPhones</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -29,9 +29,9 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarScroll">
           <div class="w-25"></div>
 
-          <!-- Barra de búsqueda -->
+          <!-- Barra búsqueda -->
           <form class="d-flex w-25" role="search">
-            <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Buscar empleado..." aria-label="Search">
             <button class="btn btn-outline-secondary" type="submit">Buscar</button>
           </form>
 
@@ -49,7 +49,7 @@
             <!-- PERFIL -->
             <li class="nav-item dropdown z-3">
               <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+                data-bs-toggle="dropdown">
                 <div class="rounded-circle bg-light d-flex justify-content-center align-items-center me-2"
                   style="width: 32px; height: 32px; border: 1px solid var(--border-medium);">
                   <span>👤</span>
@@ -63,18 +63,23 @@
                     style="width: 64px; height: 64px; border: 1px solid var(--border-medium);">
                     <span class="fs-3">👤</span>
                   </div>
-                  <p class="mb-0 fw-semibold">María López</p>
-                  <small class="text-secondary">empleado@istore.com</small>
+                  <p class="mb-0 fw-semibold">Administrador</p>
+                  <small class="text-secondary">admin@istore.com</small>
                 </li>
                 <li><a class="dropdown-item" href="">👤 Mi cuenta</a></li>
                 <li><a class="dropdown-item" href="">📦 Mis pedidos</a></li>
+
                 <li class="mt-2 mb-1 px-3 text-uppercase small fw-semibold text-secondary text-center">
-                  Funciones de empleado
+                  Funciones de admin
                 </li>
                 <li><a class="dropdown-item" href="../catalogo.html">🛠️ Gestionar catálogos</a></li>
                 <li><a class="dropdown-item" href="../inventario.html">📦 Gestionar inventario</a></li>
                 <li><a class="dropdown-item" href="../pedidos.html">📑 Ver pedidos</a></li>
                 <li><a class="dropdown-item" href="../devoluciones.html">🔄 Devoluciones</a></li>
+                <li><a class="dropdown-item" href="../usuarios.html">👤 Gestionar usuarios y roles</a></li>
+                <li><a class="dropdown-item" href="../errores.html">⚠️ Supervisar errores</a></li>
+                <li><a class="dropdown-item" href="../tablasBD.html">🗄️ Ver tablas BD</a></li>
+
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -90,7 +95,7 @@
   <!-- CONTENIDO -->
   <main class="container my-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
-      <h1 class="fw-bold">⌚ Apple Watch</h1>
+      <h1 class="fw-bold">📱 iPhones</h1>
       <div class="d-flex flex-row gap-3">
         <a href="../catalogo.html" class="btn btn-secondary">Volver</a>
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAgregar">
@@ -100,14 +105,14 @@
     </div>
 
     <!-- Grid de productos -->
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
       <div class="col">
         <div class="card product h-100 shadow-sm border-0">
-          <img src="/img/applewatches/applewatch-ultra.png" class="card-img-top product-image" alt="Apple Watch Ultra">
+          <img src="/img/iphones/iphone-16-pro-max.png" class="card-img-top product-image" alt="iPhone 16 Pro Max">
           <div class="card-body text-center">
-            <h5 class="card-title fw-semibold">Apple Watch Ultra</h5>
-            <p class="text-secondary small">49 mm · Caja titanio</p>
-            <p class="fw-bold text-primary">S/. 3,899.00</p>
+            <h5 class="card-title fw-semibold">iPhone 16 Pro Max</h5>
+            <p class="text-secondary small">256 GB · Titanio</p>
+            <p class="fw-bold text-primary">S/. 6,199.00</p>
           </div>
           <div class="card-footer bg-white border-0 d-flex justify-content-between">
             <button class="btn btn-outline-danger btn-sm">Eliminar</button>
@@ -119,12 +124,11 @@
 
       <div class="col">
         <div class="card product h-100 shadow-sm border-0">
-          <img src="/img/applewatches/applewatch-series-9.png" class="card-img-top product-image"
-            alt="Apple Watch Series 9">
+          <img src="/img/iphones/iphone-15-pro-max.png" class="card-img-top product-image" alt="iPhone 16 Pro Max">
           <div class="card-body text-center">
-            <h5 class="card-title fw-semibold">Apple Watch Series 9</h5>
-            <p class="text-secondary small">45 mm · Caja aluminio</p>
-            <p class="fw-bold text-primary">S/. 2,299.00</p>
+            <h5 class="card-title fw-semibold">iPhone 15 Pro Max</h5>
+            <p class="text-secondary small">256 GB · Titanio</p>
+            <p class="fw-bold text-primary">S/. 5,199.00</p>
           </div>
           <div class="card-footer bg-white border-0 d-flex justify-content-between">
             <button class="btn btn-outline-danger btn-sm">Eliminar</button>
@@ -136,11 +140,91 @@
 
       <div class="col">
         <div class="card product h-100 shadow-sm border-0">
-          <img src="/img/applewatches/applewatch-se.png" class="card-img-top product-image" alt="Apple Watch SE">
+          <img src="/img/iphones/iphone-15-pro.png" class="card-img-top product-image" alt="iPhone 16 Pro Max">
           <div class="card-body text-center">
-            <h5 class="card-title fw-semibold">Apple Watch SE</h5>
-            <p class="text-secondary small">44 mm · GPS</p>
-            <p class="fw-bold text-primary">S/. 1,499.00</p>
+            <h5 class="card-title fw-semibold">iPhone 15 Pro</h5>
+            <p class="text-secondary small">256 GB · Azul</p>
+            <p class="fw-bold text-primary">S/. 4,999.00</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between">
+            <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+            <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal"
+              data-bs-target="#modalEditarProducto">Editar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card product h-100 shadow-sm border-0">
+          <img src="/img/iphones/iphone-15-plus.png" class="card-img-top product-image" alt="iPhone 16 Pro Max">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">iPhone 15 Plus</h5>
+            <p class="text-secondary small">256 GB · Rosa</p>
+            <p class="fw-bold text-primary">S/. 4,199.00</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between">
+            <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+            <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal"
+              data-bs-target="#modalEditarProducto">Editar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card product h-100 shadow-sm border-0">
+          <img src="/img/iphones/iphone-15.png" class="card-img-top product-image" alt="iPhone 16 Pro Max">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">iPhone 15</h5>
+            <p class="text-secondary small">256 GB · Amarillo</p>
+            <p class="fw-bold text-primary">S/. 3,799.00</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between">
+            <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+            <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal"
+              data-bs-target="#modalEditarProducto">Editar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card product h-100 shadow-sm border-0">
+          <img src="/img/iphones/iphone-14-pro.png" class="card-img-top product-image" alt="iPhone 16 Pro Max">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">iPhone 14 Pro</h5>
+            <p class="text-secondary small">256 GB · Morado</p>
+            <p class="fw-bold text-primary">S/. 4,299.00</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between">
+            <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+            <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal"
+              data-bs-target="#modalEditarProducto">Editar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card product h-100 shadow-sm border-0">
+          <img src="/img/iphones/iphone-14.png" class="card-img-top product-image" alt="iPhone 16 Pro Max">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">iPhone 14</h5>
+            <p class="text-secondary small">256 GB · Medianoche</p>
+            <p class="fw-bold text-primary">S/. 3,299.00</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between">
+            <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+            <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal"
+              data-bs-target="#modalEditarProducto">Editar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card product h-100 shadow-sm border-0">
+          <img src="/img/iphones/iphone-13.png" class="card-img-top product-image" alt="iPhone 16 Pro Max">
+          <div class="card-body text-center">
+            <h5 class="card-title fw-semibold">iPhone 13</h5>
+            <p class="text-secondary small">256 GB · Verde</p>
+            <p class="fw-bold text-primary">S/. 2,699.00</p>
           </div>
           <div class="card-footer bg-white border-0 d-flex justify-content-between">
             <button class="btn btn-outline-danger btn-sm">Eliminar</button>
@@ -169,22 +253,31 @@
         </div>
         <div class="modal-body">
           <form>
+            <!-- Nombre -->
             <div class="mb-3">
               <label for="editarNombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="editarNombre" value="Apple Watch Ultra">
+              <input type="text" class="form-control" id="editarNombre" value="iPhone 16 Pro Max">
             </div>
+
+            <!-- Descripción -->
             <div class="mb-3">
               <label for="editarDescripcion" class="form-label">Descripción</label>
-              <textarea class="form-control" id="editarDescripcion" rows="2">49 mm · Caja titanio</textarea>
+              <textarea class="form-control" id="editarDescripcion" rows="2">256 GB · Titanio</textarea>
             </div>
+
+            <!-- Precio -->
             <div class="mb-3">
               <label for="editarPrecio" class="form-label">Precio</label>
-              <input type="number" class="form-control" id="editarPrecio" value="3899.00">
+              <input type="number" class="form-control" id="editarPrecio" value="6199.00">
             </div>
+
+            <!-- Stock -->
             <div class="mb-3">
               <label for="editarStock" class="form-label">Stock disponible</label>
-              <input type="number" class="form-control" id="editarStock" value="15">
+              <input type="number" class="form-control" id="editarStock" value="20">
             </div>
+
+            <!-- Imagen -->
             <div class="mb-3">
               <label for="editarImagen" class="form-label">Imagen</label>
               <input type="file" class="form-control" id="editarImagen">
@@ -200,28 +293,29 @@
     </div>
   </div>
 
+
   <!-- MODAL AGREGAR -->
   <div class="modal fade" id="modalAgregar" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content border-0 shadow">
         <div class="modal-header">
-          <h5 class="modal-title">➕ Añadir nuevo Apple Watch</h5>
+          <h5 class="modal-title">➕ Añadir nuevo iPhone</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
           <form>
             <div class="mb-3">
               <label for="nombreProducto" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombreProducto" placeholder="Ej: Apple Watch Series X">
+              <input type="text" class="form-control" id="nombreProducto" placeholder="Ej: iPhone 16 Pro Max">
             </div>
             <div class="mb-3">
               <label for="descripcionProducto" class="form-label">Descripción</label>
               <textarea class="form-control" id="descripcionProducto" rows="2"
-                placeholder="Ej: 44 mm · Caja aluminio"></textarea>
+                placeholder="Ej: 256 GB · Titanio"></textarea>
             </div>
             <div class="mb-3">
               <label for="precioProducto" class="form-label">Precio</label>
-              <input type="number" class="form-control" id="precioProducto" placeholder="Ej: 2299.00">
+              <input type="number" class="form-control" id="precioProducto" placeholder="Ej: 6199.00">
             </div>
             <div class="mb-3">
               <label for="imgProducto" class="form-label">Imagen</label>

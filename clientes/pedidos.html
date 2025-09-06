@@ -149,35 +149,6 @@
     </main>
 
     <!-- MODAL DETALLE PEDIDO -->
-    <div class="modal fade" id="pedidoModal1" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content rounded-3 border-0 shadow">
-                <div class="modal-header">
-                    <h5 class="modal-title">Detalle Pedido #10023</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>Fecha:</strong> 02/09/2025</p>
-                    <p><strong>Estado:</strong> <span class="badge bg-success">Entregado</span></p>
-                    <hr>
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="../img/iphones/iphone-15-pro.png" class="rounded me-3"
-                            style="width: 80px; height: 80px; object-fit: cover;">
-                        <div>
-                            <p class="fw-semibold mb-1">iPhone 15 Pro</p>
-                            <p class="text-secondary small mb-0">Cantidad: 1</p>
-                        </div>
-                    </div>
-                    <p class="fw-bold">Total: S/. 5,199.00</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button class="btn btn-primary">Descargar factura</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="modal fade" id="pedidoModal2" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content rounded-3 border-0 shadow">
@@ -200,8 +171,73 @@
                     <p class="fw-bold">Total: S/. 6,598.00</p>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button class="btn btn-primary">Descargar factura</button>
+                    <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#soporteModal">
+                        Contactar soporte
+                    </button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="pedidoModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-3 border-0 shadow">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalle Pedido #10023</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Fecha:</strong> 02/09/2025</p>
+                    <p><strong>Estado:</strong> <span class="badge bg-success">Entregado</span></p>
+                    <hr>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="../img/iphones/iphone-15-pro.png" class="rounded me-3"
+                            style="width: 80px; height: 80px; object-fit: cover;">
+                        <div>
+                            <p class="fw-semibold mb-1">iPhone 15 Pro</p>
+                            <p class="text-secondary small mb-0">Cantidad: 1</p>
+                        </div>
+                    </div>
+                    <p class="fw-bold">Total: S/. 5,199.00</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Descargar factura</button>
+                    <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#soporteModal">
+                        Contactar soporte
+                    </button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CONTACTAR SOPORTE -->
+    <div class="modal fade" id="soporteModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow rounded-3">
+                <div class="modal-header">
+                    <h5 class="modal-title">📩 Contactar soporte</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="asuntoSoporte" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="asuntoSoporte"
+                                placeholder="Ej: Problema con mi pedido">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensajeSoporte" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensajeSoporte" rows="4"
+                                placeholder="Describe tu problema o consulta..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-primary">Enviar</button>
                 </div>
             </div>
         </div>
